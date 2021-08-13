@@ -1,10 +1,10 @@
 # itc-collision-avoidance
 
 ### Instructions
-- Create an Off/On Button to turn on autopilot. Name it "AP".
+- Create an Off/On Button to turn on autopilot. Name it "AP" with 1 value for On and 0 for Off.
 - On your FcuForward lever: Rename LeverCenteringSpeed to "Cruise". (Note: this is a common button on most ships. It may already be setup.)
 - On all Rangefinders: Rename RangeFinderDistance to "RT". Leave RangeFinderOnState as-is. Ensure RangeFinderSearchLength is set to 1000.
-- Optionally create warning light(s) or audibles to be trigger by "wl". wl will be 1 during avoidance manuevers.
+- Optionally create warning light(s) or audibles to be triggered by "wl". wl will be 1 during avoidance manuevers.
 
 ### Rangefinder Array
 The key part of an autopilot build is your Rangefinder array. You must have full coverage of your ship in the direction of movement. Good density should be 96cm between RF beams to decrease the probabilty of getting clipped.
