@@ -1,0 +1,19 @@
+// itc-collision-avoidance. author: repo. corp: ITC.
+ol=3 bal=4 bf=5 bsla=6 bslb=7 el=8 r=18 s=1000
+if :AP==1 then gotobal else gotool end
+:RangeFinderOnState=1 :Cruise=0
+:FcuForward=100 :FcuBackward=0 :FcuRightLeft=0 :wl=0
+if :AP==0 then gotor else if :RT<s then gotoel else gotobsla end end
+if :AP==0 then gotor else if :RT<s then gotoel else gotobf end end
+:FcuForward=0 :FcuBackward=100 :FcuRightLeft=100 :wl=1
+// Delay
+// Delay
+// Delay
+// Delay
+// Delay
+// Delay
+// Delay
+// Delay. After RF trigger, evade for at least 2 seconds.
+gotobslb
+:RangeFinderOnState=0 :FcuForward=0
+:FcuBackward=0 :FcuRightLeft=0 :Cruise=1 gotool
